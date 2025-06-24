@@ -1,12 +1,70 @@
-# React + Vite
+# AI Image Enhancer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application that enhances the quality of your images using advanced AI, built with React, Vite, and TailwindCSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Upload images via drag & drop or file picker
+- Enhances image quality using an external AI API
+- Side-by-side comparison of original and enhanced images
+- Download the enhanced image
+- Responsive and modern UI
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Demo Screenshot](public/Vite-React.png) <!-- Replace with actual screenshot if available -->
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+```sh
+git clone https://github.com/your-username/enhancer-ai.git
+cd enhancer-ai
+npm install
+```
+
+### Running Locally
+
+```sh
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Building for Production
+
+```sh
+npm run build
+```
+
+### Linting
+
+```sh
+npm run lint
+```
+
+## Project Structure
+
+```
+src/
+  App.jsx
+  main.jsx
+  index.css
+  components/
+    Home.jsx
+    ImageUpload.jsx
+    ImagePreview.jsx
+    Loading.jsx
+  utils/
+    enhanceImageApi.js
+```
+
+## API
+
+This app uses the [techhk.aoscdn.com](https://techhk.aoscdn.com/) API for image enhancement. You may need to provide your own API key for production use.
